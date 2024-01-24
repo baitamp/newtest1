@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 
 class StyleT extends StatelessWidget{
-  StyleT({super.key});
+  StyleT(this.text,{super.key});
+
+  var text;
 
   Widget build(context){
-    return Text('ᵇ ᵘ ᵠ ᵗ ᵃ ᵐ ᵖ  ◟✩‧',
-        style: TextStyle(fontSize: 30 , 
-        color:Color.fromARGB(255, 247, 242, 245))); //ชื่อ ไซร์อักษร
+    return Text(text,style: TextStyle(fontSize: 30 , color: const Color.fromARGB(255, 245, 245, 245))); //ชื่อ ไซร์อักษร
      
 }
 }

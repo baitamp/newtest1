@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:newtest/diceroll.dart';
 import 'package:newtest/teststyle.dart';
 
 class GContainer extends StatelessWidget{
   GContainer({super.key});
+
+
 
   Widget build(context){
     return Container( //พื้นหลังควรอยู่ด้านหลังตัวอักษร
@@ -13,8 +16,7 @@ class GContainer extends StatelessWidget{
             Color.fromARGB(221, 213, 227, 149)
           ],begin:Alignment.topRight,end: Alignment.bottomLeft)),
           child: Center( //ตั้งค่าตัวอักษรตรงกลาง
-            child:StyleT()  //ชื่อ ไซร์อักษร
-      ));
+            child:DiceThrown()));
     
 }
   }
